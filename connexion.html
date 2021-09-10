@@ -71,7 +71,7 @@
         margin: auto;
         padding: 30px;
         border: 1px solid #f1f1f1;
-        /*background:#fafafa;*/
+        background-color:#fafafa;
         /*border: solid;*/
       
         
@@ -81,13 +81,7 @@
         font-size: 16px;
         font-weight: bold;
     }
-    .create{
-        display: flex;
-    }
-    .socio{
-        margin-top:13px;
-        margin-left: 15px;
-    }
+   
     input[type=text], input[type=password], input[type=email]{
    width: 100%;
    padding: 15px;
@@ -96,15 +90,14 @@
    border:none;
    outline: none;
    border-radius:15px;
-   
  }
 
- input[type=text]{
+input[type=text]{
 border:1px solid #e040fb;
 }
 
  button{
-  background-color: #e040fb;
+  background-color: #e02f82;
   color: rgb(5, 1, 1);
   padding: 14px 20px;
   margin: 8px 0;
@@ -156,44 +149,41 @@ button.submit{
     text-align: center;
 }
 a{ text-decoration: none;}
+
+.register{
+    margin-left:180px;
+}
+
+.envoyer{
+    margin-top:140px;
+}
 </style>
 </head>
 <body>
    <main>
        
        <div class="container">
-            <section class="section-gauche"><!--////////////////SECTION gauche-->
-                <img src="communications-media-and-technology-mobile.gif"class="gif" alt="premier , gif">
-            </section><!--/////////////////////SECTION gauche-->
+            
 
           <section class="section-droit"><!--///////////////////SECTION droit-->
             <div class="login">
-                <font color="rgb(218, 212, 212)">Alredy have an account</font>
-                    <button type="submit" name="envoyer" class="submit"><a href="connexion.html">connexion</a></button> 
+                <button type="submit" name="envoyer" class="submit"><a href="index.html">inscription</a></button>  
               </div>
                
                 <form action="#">
-                    <p> <h1>welcome to Focus!</h1> 
-                        <font color="rgb(218, 212, 212)">Register your account</font>
+                    <p class="register"> 
+                        <font color="rgb(218, 212, 212)">Register To Connect</font>
                     </p>
                    
                     <label for="name" class="titre">Name</label>
-                    <input type="text" name="nom" placeholder="Ch|">
+                    <input type="text" name="nom" placeholder="|">
                     <label for="email" class="titre">Email</label>
                     <input type="email" name="mail" placeholder="focus001@gmail.com">
                     <label for="password" class="titre">Password</label>
                     <input type="password" name="pswrd" placeholder="8+characters">
                     <div>
-                        <button type="submit" name="envoyer"><a href="connexion.html">inscription</a></button>
+                       <a href="accueil.html"><button type="submit" name="envoyer" class="envoyer"><a href="accueil.html">connexion</a></button></a>
                     </div> 
-                    <div class="create">
-                        <font color="rgb(218, 212, 212)">Create account with</font>
-                        <div class="socio">
-                            <img src="fb.jpg" class="icone" alt="facebook">
-                            <img src="in.png" class="icone" alt="linkInd">
-                            <img src="google.jfif" class="icone" alt="google">
-                        </div>
-                    </div>
                 </form>
           </section><!--/////////////////////SECTION droit-->
             
